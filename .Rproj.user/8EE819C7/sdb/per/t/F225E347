@@ -1,0 +1,18 @@
+{
+    "contents" : "# gathers data of oldest appearances in the tournament as a measure of experience\n\n# 2015 tournament: comp_id=479\n# 2014 tournament: comp_id=448\n\n# England: club_id=116\n# France: club_id=\n# Ireland: club_id=\n# Italy: club_id=122\n# Scotland: club_id=118\n# Wales: club_id=117\n\n#read 2015 and 2014 data\noldest2015<-readLines('http://rugby.statbunker.com/competitions/OldestAppearances?comp_id=479')\noldest2014<-readLines('http://rugby.statbunker.com/competitions/OldestAppearances?comp_id=448')\n\n# extract date\nmyexp<-'<tr><td>([1-31]-[a-zA-Z+]-[2015])</td>'\ndatalines<-grep(myexp,oldest2015[173],value = T)\n",
+    "created" : 1443719873647.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3983109740",
+    "id" : "F225E347",
+    "lastKnownWriteTime" : 1443723098,
+    "path" : "C:/Users/daniele.parenti/Dropbox/R/my6nations/TeamData/OldestAppearance.R",
+    "project_path" : "TeamData/OldestAppearance.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
